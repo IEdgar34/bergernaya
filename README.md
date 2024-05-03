@@ -1,1 +1,1 @@
-https://iedgar34.github.io/bergernaya/src
+https://iedgar34.github.io/burgernaya/src
