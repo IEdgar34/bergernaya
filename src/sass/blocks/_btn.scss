@@ -1,0 +1,25 @@
+.btn {
+    width: 276px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    background-color: #f2f2f3;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #000;
+    cursor: pointer;
+    @include mobile-medium() {
+        width: 232px;
+    }
+    @include hover() {
+        &:hover {
+            background-color: #ff7020;
+            color: white;
+        }
+        &:active {
+            background-color: #ff7020;
+            color: white;
+        }
+    }
+}

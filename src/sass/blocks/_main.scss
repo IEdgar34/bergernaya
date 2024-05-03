@@ -1,0 +1,51 @@
+.main {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    padding-bottom: 50px;
+    /* position: relative; */
+    .grid {
+        position: relative;
+        display: grid;
+        grid-template-areas: "basket menu-burgers ";
+        grid-template-columns: 300px minmax(200px, 1320px);
+        grid-template-rows: auto /* minmax(109px, 467px) 1fr */;
+        justify-content: center;
+        column-gap: 30px;
+        @include tablet-big() {
+            display: flex;
+            flex-direction: column;
+        }
+        .basket {
+            position: sticky;
+            top: 36%;
+            left: 6%;
+            width: 300px;
+            grid-area: basket;
+            align-self: start;
+            min-height: 109px;
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 24px 16px;
+            @include desctop-big() {
+                left: 3%;
+            }
+            @include tablet-big() {
+                position: static;
+                margin: 0 auto;
+            }
+            @include mobile-medium() {
+                width: 260px;
+            }
+        }
+        .menu {
+            display: none;
+            &_active {
+                display: block;
+                grid-area: menu-burgers;
+                max-width: 990px;
+                min-height: 832px;
+            }
+        }
+    }
+}

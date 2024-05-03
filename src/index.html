@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+    </head>
+    <body>
+        <header>
+            <section class="burger">
+                <!--  <img src="images/bg.png" alt="bg" / class="burger__bg"> -->
+                <div class="burger__icon">
+                    <img src="icons/YourMeal.svg" alt="logo" />
+                    <img src="icons/kitchen.svg" alt="logo" class="burger__icon_logo" />
+                </div>
+                <div class="burger__title-wrap">
+                    <img src="images/burger.png" alt="burger" />
+                    <div class="burger__title-inner">
+                        <h1>Только самые <span>сочные бургеры!</span></h1>
+                        <h4>Бесплатная доставка от 599₽</h4>
+                    </div>
+                </div>
+            </section>
+            <section class="subheader">
+                <div class="subheader__wrap">
+                    <ul class="subheader__item-wrap">
+                        <li class="subheader__item-wrap_item subheader__item-wrap_item_active">
+                            <img src="icons/burger.svg" alt="" class="subheader__item-wrap_img" />
+                            <span>Бургеры</span>
+                        </li>
+                        <li class="subheader__item-wrap_item">
+                            <img src="icons/snacks.svg" alt="" class="subheader__item-wrap_img" />
+                            <span>Закуски</span>
+                        </li>
+                        <li class="subheader__item-wrap_item">
+                            <img src="icons/hotdog.svg" alt="" class="subheader__item-wrap_img" />
+                            <span>Хот-доги</span>
+                        </li>
+                        <li class="subheader__item-wrap_item">
+                            <img src="icons/combo.svg" alt="" class="subheader__item-wrap_img" />
+                            <span>Комбо</span>
+                        </li>
+                        <li class="subheader__item-wrap_item">
+                            <img src="icons/shaverma.svg" alt="" class="subheader__item-wrap_img" />
+                            <span>Шаурма</span>
+                        </li>
+                        <li class="subheader__item-wrap_item">
+                            <img src="icons/pizza.svg" alt="" class="subheader__item-wrap_img" />
+                            <span>Пицца</span>
+                        </li>
+                        <li class="subheader__item-wrap_item">
+                            <img src="icons/vok.svg" alt="" class="subheader__item-wrap_img" />
+                            <span>Вок</span>
+                        </li>
+                        <li class="subheader__item-wrap_item">
+                            <img src="icons/deserts.svg" alt="" class="subheader__item-wrap_img" />
+                            <span>Десерты</span>
+                        </li>
+                        <li class="subheader__item-wrap_item">
+                            <img src="icons/souse.svg" alt="" class="subheader__item-wrap_img" />
+                            <span>Соусы</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subheader__btn-wrapper">
+                    <div class="subheader__prev">&lt;</div>
+                    <div class="subheader__next">&gt;</div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="main">
+                <div class="grid">
+                    <section class="basket">
+                        <div class="basket__name">
+                            <h3 class="basket__title">Корзина</h3>
+                            <div class="basket__curent">0</div>
+                        </div>
+                        <div class="basket__scroll"></div>
+                        <div class="basket__total">
+                            <div class="basket__total_wrap">
+                                <p class="basket__total_total">Итого</p>
+                                <span data-total>0<span>₽</span></span>
+                            </div>
+                            <button class="basket__total_btn">Оформить заказ</button>
+                            <div class="basket__delivery">
+                                <img src="icons/delivery.svg" alt="delivery" />
+                                <span class="basket__delivery_descr">Бесплатная доставка</span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="menu-burgers menu menu_active">
+                        <h1 class="title">Бургеры</h1>
+                        <div class="card-wrap">
+                            <div class="card">
+                                <img src="images/bomb.png" alt="" class="card__img" />
+                                <div class="card__item-price">689₽</div>
+                                <h4 class="card__descr">Мясная Бомба</h4>
+                                <p class="card__gramm">590г</p>
+                                <button class="btn">добавить</button>
+                            </div>
+                            <div class="card">
+                                <img src="images/super.png" alt="" class="card__img" />
+                                <div class="card__item-price">550₽</div>
+                                <h4 class="card__descr">Супер сырный</h4>
+                                <p class="card__gramm">512г</p>
+                                <button class="btn">добавить</button>
+                            </div>
+                            <div class="card">
+                                <img src="images/sut.png" alt="" class="card__img" />
+                                <div class="card__item-price">639₽</div>
+                                <h4 class="card__descr">Сытный</h4>
+                                <p class="card__gramm">580г</p>
+                                <button class="btn">добавить</button>
+                            </div>
+                            <div class="card">
+                                <img src="images/big.png" alt="" class="card__img" />
+                                <div class="card__item-price">480₽</div>
+                                <h4 class="card__descr">Тяжелый удар</h4>
+                                <p class="card__gramm">590г</p>
+                                <button class="btn">добавить</button>
+                            </div>
+                            <div class="card">
+                                <img src="images/clasic.png" alt="" class="card__img" />
+                                <div class="card__item-price">450₽</div>
+                                <h4 class="card__descr">Вечная классика</h4>
+                                <p class="card__gramm">450г</p>
+                                <button class="btn">добавить</button>
+                            </div>
+                            <div class="card">
+                                <img src="images/italoan.png" alt="" class="card__img" />
+                                <div class="card__item-price">560₽</div>
+                                <h4 class="card__descr">Итальянский</h4>
+                                <p class="card__gramm">510г</p>
+                                <button class="btn">добавить</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="menu__snacks menu">
+                        <h1 class="title">Закуски</h1>
+                        <div class="card-wrap">
+                            <div class="card">
+                                <img src="images/nachos.png" alt="" class="card__img" />
+                                <div class="card__item-price">250₽</div>
+                                <h4 class="card__descr">Начос</h4>
+                                <p class="card__gramm">220г</p>
+                                <button class="btn">добавить</button>
+                            </div>
+                            <div class="card">
+                                <img src="images/potato.png" alt="" class="card__img" />
+                                <div class="card__item-price">245₽</div>
+                                <h4 class="card__descr">Картошка фри</h4>
+                                <p class="card__gramm">180г</p>
+                                <button class="btn">добавить</button>
+                            </div>
+                            <div class="card">
+                                <img src="images/onion.png" alt="" class="card__img" />
+                                <div class="card__item-price">230₽</div>
+                                <h4 class="card__descr">Луковые кольца</h4>
+                                <p class="card__gramm">160г</p>
+                                <button class="btn">добавить</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="menu__hot-dogs menu">
+                        <h1 class="title">Хот-доги</h1>
+                        <div class="card-wrap">
+                            <div class="card">
+                                <img src="images/hotdog.png" alt="" class="card__img" />
+                                <div class="card__item-price">290₽</div>
+                                <h4 class="card__descr">Домашний хот-дог</h4>
+                                <p class="card__gramm">250г</p>
+                                <button class="btn">добавить</button>
+                            </div>
+                            <div class="card">
+                                <img src="images/hotdog1.png" alt="" class="card__img" />
+                                <div class="card__item-price">239₽</div>
+                                <h4 class="card__descr">Жгучий хот-дог</h4>
+                                <p class="card__gramm">245г</p>
+                                <button class="btn">добавить</button>
+                            </div>
+                            <div class="card">
+                                <img src="images/clasichotdog.png" alt="" class="card__img" />
+                                <div class="card__item-price">220₽</div>
+                                <h4 class="card__descr">Классический хот-дог</h4>
+                                <p class="card__gramm">215г</p>
+                                <button class="btn">добавить</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="menu__kombo menu">
+                        <h1 class="title">Комбо</h1>
+                        <h3>здесь пока пусто =)</h3>
+                    </section>
+                    <section class="menu__shawerma menu">
+                        <h1 class="title">Шаурма</h1>
+                        <h3>здесь пока пусто =)</h3>
+                    </section>
+                    <section class="menu__pizza menu">
+                        <h1 class="title">Пицца</h1>
+                        <h3>здесь пока пусто =)</h3>
+                    </section>
+                    <section class="menu__wok menu">
+                        <h1 class="title">Вок</h1>
+                        <h3>здесь пока пусто =)</h3>
+                    </section>
+                    <section class="menu__deserts menu">
+                        <h1 class="title">Десерты</h1>
+                        <h3>здесь пока пусто =)</h3>
+                    </section>
+                    <section class="menu__souse menu">
+                        <h1 class="title">Соусы</h1>
+                        <h3>здесь пока пусто =)</h3>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer">
+                <div class="footer__wrap">
+                    <div class="footer__logo">
+                        <img src="icons/footerlogo.svg" alt="" />
+                        <p>© YouMeal, 2022 <br /><br />Design: Anastasia Ilina</p>
+                    </div>
+                    <div class="footer__tell">
+                        <p>Номер для заказа</p>
+                        <div>
+                            <a href="tel:79308333811">
+                                <img src="icons/tel.svg" alt="" />
+                                +7(930)833-38-11</a
+                            >
+                        </div>
+                    </div>
+                    <div class="footer__social">
+                        <img src="icons/vk.svg" alt="vk" />
+                        <img src="icons/telegram.svg" alt="telegram" />
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <div class="modal"></div>
+        <script src="boundle/bundle.js"></script>
+    </body>
+</html>
