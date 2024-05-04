@@ -1,10 +1,10 @@
+import { slider } from "./modules/slider";
+import { createElem } from "./modules/createelem";
+import { showDescription } from "./modules/showdescription";
+import { tabs } from "./modules/tabs";
 window.addEventListener("DOMContentLoaded", () => {
-    const slider = require("./modules/slider");
-    const createelem = require("./modules/createelem");
-    const tabs = require("./modules/tabs");
-    const showdescription = require("./modules/showdescription");
-    showdescription();
+    showDescription();
     tabs();
-    createelem();
+    createElem();
     slider();
 });

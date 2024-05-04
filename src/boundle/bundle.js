@@ -1,12 +1,17 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/js/modules/createelem.js":
 /*!**************************************!*\
   !*** ./src/js/modules/createelem.js ***!
   \**************************************/
-/***/ ((module) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   createElem: () => (/* binding */ createElem)
+/* harmony export */ });
 function createElem() {
     //add elemet in basket
     const cardList = document.querySelectorAll(".card");
@@ -112,7 +117,6 @@ function createElem() {
     });
 }
 
-module.exports = createElem;
 
 
 /***/ }),
@@ -121,8 +125,12 @@ module.exports = createElem;
 /*!*******************************************!*\
   !*** ./src/js/modules/showdescription.js ***!
   \*******************************************/
-/***/ ((module) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   showDescription: () => (/* binding */ showDescription)
+/* harmony export */ });
 function showDescription() {
     const cards = document.querySelectorAll(".card");
     const modal = document.querySelector(".modal");
@@ -237,7 +245,7 @@ function showDescription() {
     });
 }
 
-module.exports = showDescription;
+
 
 
 /***/ }),
@@ -246,8 +254,12 @@ module.exports = showDescription;
 /*!**********************************!*\
   !*** ./src/js/modules/slider.js ***!
   \**********************************/
-/***/ ((module) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   slider: () => (/* binding */ slider)
+/* harmony export */ });
 function slider() {
     const prev = document.querySelector(".subheader__prev");
     const next = document.querySelector(".subheader__next");
@@ -283,7 +295,8 @@ function slider() {
     }
     btnOpacity();
 }
-module.exports = slider;
+
+/* module.exports = slider; */
 
 
 /***/ }),
@@ -292,8 +305,12 @@ module.exports = slider;
 /*!********************************!*\
   !*** ./src/js/modules/tabs.js ***!
   \********************************/
-/***/ ((module) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   tabs: () => (/* binding */ tabs)
+/* harmony export */ });
 function tabs() {
     //menu tabs
     const menuList = document.querySelectorAll(".subheader__item-wrap_item");
@@ -322,7 +339,7 @@ function tabs() {
     }
 }
 
-module.exports = tabs;
+
 
 
 /***/ })
@@ -354,21 +371,55 @@ module.exports = tabs;
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 /*!**************************!*\
   !*** ./src/js/script.js ***!
   \**************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/slider */ "./src/js/modules/slider.js");
+/* harmony import */ var _modules_createelem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/createelem */ "./src/js/modules/createelem.js");
+/* harmony import */ var _modules_showdescription__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/showdescription */ "./src/js/modules/showdescription.js");
+/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/tabs */ "./src/js/modules/tabs.js");
+
+
+
+
 window.addEventListener("DOMContentLoaded", () => {
-    const slider = __webpack_require__(/*! ./modules/slider */ "./src/js/modules/slider.js");
-    const createelem = __webpack_require__(/*! ./modules/createelem */ "./src/js/modules/createelem.js");
-    const tabs = __webpack_require__(/*! ./modules/tabs */ "./src/js/modules/tabs.js");
-    const showdescription = __webpack_require__(/*! ./modules/showdescription */ "./src/js/modules/showdescription.js");
-    showdescription();
-    tabs();
-    createelem();
-    slider();
+    (0,_modules_showdescription__WEBPACK_IMPORTED_MODULE_2__.showDescription)();
+    (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_3__.tabs)();
+    (0,_modules_createelem__WEBPACK_IMPORTED_MODULE_1__.createElem)();
+    (0,_modules_slider__WEBPACK_IMPORTED_MODULE_0__.slider)();
 });
 
 })();

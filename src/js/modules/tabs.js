@@ -25,5 +25,5 @@ function tabs() {
         });
     }
 }
+export {tabs}
 
-module.exports = tabs;

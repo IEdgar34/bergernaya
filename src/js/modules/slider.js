@@ -33,4 +33,5 @@ function slider() {
     }
     btnOpacity();
 }
-module.exports = slider;
+export { slider };
+/* module.exports = slider; */

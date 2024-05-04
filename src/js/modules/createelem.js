@@ -102,5 +102,4 @@ function createElem() {
         });
     });
 }
-
-module.exports = createElem;
+export { createElem };

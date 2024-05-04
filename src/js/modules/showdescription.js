@@ -111,5 +111,5 @@ function showDescription() {
         });
     });
 }
+export {showDescription}
 
-module.exports = showDescription;
